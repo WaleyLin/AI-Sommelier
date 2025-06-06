@@ -241,9 +241,11 @@ Want to revisit your past conversations? Tap the ⏱️ history icon to load the
               )}
               <TouchableOpacity
                 onLongPress={() => {
+                if (item.sender === "bot") {
                   setSelectedMessage(item);
                   setReportModalVisible(true);
-                }}
+                }
+              }}
                 delayLongPress={400}
               >
                 <View
