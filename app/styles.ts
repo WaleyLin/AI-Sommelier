@@ -1,0 +1,131 @@
+// Updated styles.ts
+import { StyleSheet, Platform } from 'react-native';
+import { THEME } from '../../styles/theme';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: THEME.COLORS.GREY_800,
+    paddingHorizontal: 10,
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 58,
+    paddingBottom: 15,
+  },
+  messageDivider: {
+    height: 1,
+    backgroundColor: '#444',
+    marginVertical: 5,
+    alignSelf: 'stretch',
+  },
+  typingIndicator: {
+    alignSelf: "center",
+    backgroundColor: "#333",
+    paddingVertical: 5,
+    paddingHorizontal: 10,
+    borderRadius: 10,
+    marginBottom: 5,
+  },
+  typingText: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "bold",
+  },
+  backButtonContainer: {
+    position: 'absolute',
+    top: 58,
+    left: 10,
+    paddingHorizontal: 10,
+  },
+  historyButton: {
+    position: 'absolute',
+    top: 58,
+    right: 10,
+    paddingHorizontal: 10,
+  },
+  headerTitle: {
+    fontSize: 18,
+    fontFamily: THEME.FONTS.BOLD,
+    color: '#fff',
+  },
+  chatBox: {
+    flex: 1,
+    backgroundColor: '#1e1e1e',
+    borderRadius: 10,
+    marginVertical: 10,
+    borderWidth: 1,
+    borderColor: '#333',
+    paddingBottom: 10,
+  },
+  messageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 5,
+  },
+  userMessageContainer: {
+    alignSelf: 'flex-end',
+    flexDirection: 'row-reverse',
+  },
+  botMessageContainer: {
+    alignSelf: 'flex-start',
+    flexDirection: 'row',
+  },
+  chatMessage: {
+    fontSize: 16,
+    fontFamily: THEME.FONTS.REGULAR,
+    padding: 10,
+    borderRadius: 10,
+    maxWidth: '80%',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    color: '#fff',
+  },
+  userMessage: {
+    backgroundColor: '#005f99',
+    color: '#fff',
+  },
+  botMessage: {
+    backgroundColor: '#333',
+    color: '#f1f1f1',
+  },
+  botTypingContainer: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#333',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 10,
+    marginVertical: 5,
+    maxWidth: '25%',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#1e1e1e',
+    borderRadius: 25,
+    borderWidth: 1,
+    borderColor: '#333',
+    paddingHorizontal: 15,
+    paddingVertical: Platform.OS === 'ios' ? 12 : 10,
+    marginBottom: 30,
+  },
+  input: {
+    flex: 1,
+    fontSize: 16,
+    fontFamily: THEME.FONTS.REGULAR,
+    color: '#fff',
+  },
+  sendButton: {
+    marginLeft: 10,
+    backgroundColor: '#0a7cd1',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
